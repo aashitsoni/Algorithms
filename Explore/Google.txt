@@ -1,0 +1,158 @@
+GoogleInterview Process
+
+You may receive an online assessment link as your first step of interview process. 
+The assessment will expire within 7 days and contains two coding questions to be completed within an hour. 
+Below are some Online Assessment questions for you to practice.
+
+Near the end of this chapter we provide more details of the different stages of a Google interview.
+
+Online Assessment Questions:
+
+  Unique Email Addresses
+  Odd Even Jump
+  License Key Formatting
+  Fruit Into Baskets
+  Google Phone Interview :Basics of the Google Phone Interview
+  Google Onsite Interview :Basics of the Google Onsite Interview
+  Google Hiring Committee :Basics of the Google Hiring Committee stage
+  Google Offer Review :Basics of the Google Offer Review process
+
+  A. Array and Strings
+ 
+String manipulation problems are in the same category as arrays, because internally, 
+a string is represented as an array of characters. Array problems usually do not require knowledge of advanced data structures, 
+so just basic data structures such as Hash Tables and basic techniques like Two Pointers should suffice.
+
+Google likes to test your ability to think at large scale by asking variation of problems represented in a data stream model. 
+For example, instead of giving you an integer array, you are given a stream of integers and all integers are too large to fit in memory. 
+A great example of such problem, which can be represented in a data stream model, is the Longest Substring with At Most K Distinct Characters.
+
+  1.Longest Substring Without Repeating Characters
+  2.Container With Most Water
+  3.3Sum
+  4.Next Permutation
+  5.Multiply Strings
+  6.Rotate Image
+  7.Jump Game
+  8.Plus One
+  9.Minimum Window Substring
+  10.Read N Characters Given Read4 II - Call multiple times
+  11.Longest Substring with At Most Two Distinct Characters
+  12.Missing Ranges
+  13.Next Closest Time
+  14.Expressive Words
+  15.Find And Replace in String
+  16.Maximize Distance to Closest Person
+  17.Valid Parentheses
+  18.Merge k Sorted Lists
+  19.Trapping Rain Water
+  20.Kth Largest Element in an Array
+  21.Meeting Rooms II
+  22.Backspace String Compare : Editor's choice: Frequently asked in a Google phone interview.
+  23.Minimum Cost to Hire K Workers
+  24.K Closest Points to Origin
+
+  B: Linked Lists
+
+According to our user survey data, Linked List problems are not asked frequently at Google. Perhaps, most linked list problems are not that complex and it is harder to ask follow up and complexity analysis questions
+
+Nonetheless, we strongly recommend you to still practice classic Linked List interview questions such as: Linked List Cycle, Intersection of Two Linked Lists, and Copy List with Random Pointers. These problems are really fun and they teach you how to think outside of the box.
+
+Of course, Merge k Sorted Lists is one of our all-time favorite interview questions, and Google seems to love this question as well. Make sure you understand how to analyze the time complexity! This is a common follow up question for this problem.
+
+  1.Add Two Numbers
+  2.Remove Nth Node From End of List
+  3.Merge Two Sorted Lists
+  4.Copy List with Random Pointer
+
+  C. Trees and Graphs
+
+Tree is just a special case of graph. To understand the difference between trees and graphs, you can work on Graph Valid Tree.
+
+Graphs are generally breath-first search or depth-first search. The same applies to Trees, but trees never contain cycles.
+
+Graphs are generally more complex than trees. Similarly, trees are generally more complex than linear data structures, such as arrays or linked lists.
+
+Prepping your knowledge in Graphs is essential for Google interviews as you would most likely encounter a tree or a graph question. A great way to brush up your skills in this area is to implement a tree or graph by coding it from scratch in the Playground.
+
+  1.Binary Tree Maximum Path Sum
+  2.Word Ladder
+  3.Number of Islands
+  4.Course Schedule II
+  5.Count Complete Tree Nodes: Editor's choice: Frequently asked in Google phone interview.
+  6.Longest Increasing Path in a Matrix
+  7.Decode String
+  8.Evaluate Division: Editor's choice: Frequently asked in Google onsite interview.
+  9.Diameter of Binary Tree
+  10.Cracking the Safe
+  11.Robot Room Cleaner: Editor's choice: Frequently asked in a Google onsite interview.
+  12.Most Stones Removed with Same Row or Column :Editor's choice: Frequently asked in a Google onsite interview.
+  13. Flip Equivalent Binary Trees
+
+  D.Recursion
+
+Recursion usually involves some kind of backtracking to enumerate all possibilities.
+
+Note that Recursion is a more general purpose algorithm. Depth-First search is a specific form of backtracking related to searching tree data structures. Therefore we categorize those problems in "Trees and Graphs", even though they involve recursion.
+
+For a great introduction of how backtracking works, please check out LeetCode's Recursion II card. A great example is "Word Search II" (aka the Boggle solver), which uses a data structure to optimize the search.
+
+  1.Word Squares
+  2.Strobogrammatic Number II
+  3.Word Search II
+  4.Android Unlock Patterns
+  5.Letter Combinations of a Phone Number
+  6. Generate Parentheses
+
+ E.Sorting and Searching
+
+Interval related problems are quite often asked at Google interviews.
+
+Similar to "Arrays and Strings", interval related problems can be asked in the context of data stream.
+
+  1.Median of Two Sorted Arrays
+  2.Find First and Last Position of Element in Sorted Array
+  3.Merge Intervals
+  4.Insert Interval
+  5.Valid Anagram
+  6.Count of Smaller Numbers After Self
+  7.Peak Index in a Mountain Array
+
+  F.Dynamic Programming
+
+It can be tricky to identify the subproblems and connect them, which is essential in solving Dynamic Programming problems. Dynamic programming is not that scary as you might think, and you can improve your dynamic programming skills by practicing a lot of these problems.
+
+According to our user survey, one of the most frequently asked Dynamic Programming Google interview questions is Split Array Largest Sum.
+
+  1.Longest Palindromic Substring
+  2.Maximum Subarray
+  3.Best Time to Buy and Sell Stock
+  4.Maximum Product Subarray
+  5.Coin Change
+  6.Split Array Largest Sum: Editor's choice: Frequently asked in a Google phone interview.
+
+ G.Design
+
+Google loves to ask lots of question variations based on the Iterator pattern, so make sure you are familiar with the concept of iterators and how iterators work in principle. A good way to learn is to read the open source code and try to code it yourself. For example, here is Google's guava implementation of Peeking Iterator.
+  1.LRU Cache
+  2.Min Stack
+  3.Serialize and Deserialize Binary Tree
+  4.Logger Rate Limiter
+  5.Insert Delete GetRandom O(1)
+  6.Design Search Autocomplete System
+
+  H.Others
+
+Here are other type of problems you may encounter in a Google interview, such as Bit Manipulation.
+
+  1.Reverse Integer
+  2.Candy
+  3.Isomorphic Strings
+  4.Strobogrammatic Number
+  5.Bulls and Cows
+  6.Range Sum Query 2D - Mutable
+  7.My Calendar II
+  8.Jewels and Stones
+  9.Swap Adjacent in LR String
+  10.Guess the Word :Editor's choice: Frequently asked in a Google onsite interview.
+  11.Minimum Area Rectangle
