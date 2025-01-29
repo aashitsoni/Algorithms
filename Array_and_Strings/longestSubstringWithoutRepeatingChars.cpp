@@ -35,6 +35,31 @@ s consists of English letters, digits, symbols and spaces.
 
 */
 
+// sliding window flexible - longest template based solution: 
+// look at the template - here: https://algo.monster/templates
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        std::set<char> charSet;
+        int max = 0;
+        int ans = 0;
+        int left = 0;
+        for(int right = 0; right < s.size(); right++ ) {
+            ans++;
+            while ( charSet.find(s[ right ] ) != charSet.end() ) {
+                charSet.erase( s[left] );
+                left++;
+                ans--;
+            }
+            charSet.insert( s[right] );
+            max = std::max(max,ans);
+        }
+        return max;
+    }
+ };
+
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
