@@ -29,7 +29,61 @@ The number of nodes in the tree is in the range [0, 2000].
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
+ * 
+ * 
  */
+
+/* Solution 1 */
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+
+// Breath first search - algo - with inline insertion
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        std::vector<std::vector<int>> res;
+        if( root==nullptr ) return res;
+        bool left_to_right = true;
+        std::queue<TreeNode*> level;
+        level.push( root );
+        
+        while( !level.empty() ) {
+            int n = level.size();
+            std::list<int> list;
+            for( int i=0; i<n; i++) {
+                TreeNode* node = level.front();
+                if( left_to_right ) {
+                    list.emplace_back( node->val );
+                }
+                else {
+                    list.emplace_front( node->val );
+                }
+                if( node->left ){
+                    level.push( node->left);
+                }
+                if( node->right ){
+                    level.push( node->right );
+                }
+                
+                level.pop();
+            }
+            left_to_right = !left_to_right;
+            res.push_back( std::vector<int>( list.begin(), list.end() ) );
+        }
+        return res;
+    }
+};
+
+/* Soultion 2 */
 class Solution {
     vector< vector< int > > zigVec;
 public:
